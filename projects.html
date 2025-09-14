@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Neha Rai</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0a192f;
+      color: #e0e0e0;
+    }
+
+    /*--- Navigation ---*/
+    nav {
+      background: #1a2238;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: #a8dadc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover, nav a:focus {
+      color: #f1faee;
+      outline: none;
+    }
+
+    /*--- Main Content ---*/
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      color: #f1faee;
+      border-bottom: 2px solid #457b9d;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .project-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-item {
+      background: #1a2238;
+      padding: 20px; /* Reduced padding to make boxes smaller */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      flex: 1 1 250px; /* Flexbox properties to make boxes responsive and small */
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-title {
+      font-size: clamp(18px, 4vw, 22px);
+      color: #a8dadc;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 14px; /* Reduced font size for description */
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+
+    .project-description strong {
+      color: #f1faee;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>My Projects</h1>
+    <ul class="project-list">
+      <li class="project-item">
+        <h2 class="project-title">URL Shortener</h2>
+        <p class="project-description">Built a tool that shortens long URLs using hashing and database integration.</p>
+      </li>
+      <li class="project-item">
+        <h2 class="project-title">Essay Grading System</h2>
+        <p class="project-description">Developed an AI-based NLP system to evaluate essays on grammar, coherence, and content.</p>
+      </li>
+      <li class="project-item">
+        <h2 class="project-title">Personal Portfolio</h2>
+        <p class="project-description">Designed and deployed a responsive portfolio using HTML, CSS, and Bootstrap.</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
